@@ -1,0 +1,25 @@
+input[type='text'], input[type='password'] {padding:7px; color:#000000;border:1px solid #000000;}
+td{vertical-align:top;}
+h1 {font:bold normal normal 20px; color:#000000 ; padding:15px; margin:0px;}
+.c {text-align:center;}
+
+.inner{border-bottom:1px solid #000000;}
+
+.table {width:100%;}
+.table td, .table th {width:160px;}
+.table th.task_text {width:350px;}
+.table thead td {text-align:center; font-weight:bold;}
+.table thead img {width:12px; height:12px;}
+.table thead .active img {width:16px; height:16px;}
+
+.pagination{}
+.pagination a{margin-right:10px;}
+.pagination span{font-weight:bold; margin-right:10px;}
+
+.form_l {width:135px; float:left; padding:8px;}
+.form_r {margin-bottom:20px;}
+.form_r input{ width:300px;}
+.form_r textarea{ width:300px; height:100px;}
+
+.error {border:1px solid #ff0000; padding:10px; color:#ff0000; font-size:16px; margin-bottom:10px;}
+.system_message {border:1px solid #ff0000; padding:10px; color:#ff0000; font-size:16px; margin:10px;}
