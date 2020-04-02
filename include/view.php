@@ -18,16 +18,13 @@ class View {
 			$system_messages = $MessageModel->getAll();
 			$MessageModel->removeAll();
 		}
+		$AdminModel = $this->_getModel('AdminModel');
+		$is_admin_login = $AdminModel->is_login();
 		include $file_name;
 	}
 
-	private function _getModel($model_name){
-		$file_name = 'models/'.$model_name.".php";
-		if(!file_exists($file_name)){
-			die('View "'.$view_name.'" doesn`t exist');
-		}
-		include_once $file_name;
-		return new $model_name;
+	private function &_getModel($model_name){
+		return Model::getModel($model_name);
 	}
 
 

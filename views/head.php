@@ -1,6 +1,3 @@
-<?php
-$AdminModel = $this->_getModel('AdminModel');
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,7 +29,7 @@ $AdminModel = $this->_getModel('AdminModel');
 
 		<a href="index.php" class="nav-link">Все задачи</a>
 		<a href="add_task.php" class="nav-link">Добавить задачу</a>
-		<?php if($AdminModel->is_login()){ ?>
+		<?php if($is_admin_login){ ?>
 			<a href="admin_logout.php" class="nav-link">Выход из администрирования</a>
 		<?php } else { ?>
 			<a href="admin_login.php" class="nav-link">Вход администратора</a>
